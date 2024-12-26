@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Ahmad Nidzomunnashil Makmur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 300px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .description {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Profil Mahasiswa</h1>
+        <div class="profile">
+            <img src="ftlatar merah.jpg" alt="Foto Ahmad Nidzomunnashil Makmur" class="profile-photo">
+            <div class="profile-info">
+                <h2>Nama: Ahmad Nidzomunnashil Makmur</h2>
+                <p>NIM: 607012400122</p>
+                <p>Kelas: 48-02</p>
+                <p>Matakuliah: Jaringan Komputer</p>
+            </div>
+        </div>
+        <div class="description">
+            <h3>Pengertian Jaringan Komputer</h3>
+            <p id="description-text">Jaringan Komputer secara bahasa terdiri dari dua kata yaitu jaringan dan 
+                komputer. Menurut Kamus Besar Bahasa Indonesia (KBBI) jaringan adalah 
+                siratan yang serupa jaring sedangkan komputer adalah alat elektronik 
+                otomatis yang dapat menghitung atau mengolah data secara cermat menurut 
+                instruksi, dan memberikan hasil pengolahan, serta dapat menjalankan sistem 
+                multimedia. 
+                Jaringan komputer secara makna mempunyai beberapa definisi, 
+                diantaranya yaitu : 
+                a. 
+                Beberapa komputer yang saling berhubungan dan melakukan 
+                komunikasi satu denga yang lain menggunakan perangkat keras. 
+                b. Sebuah rangkaian yang terdiri dari dua atau lebih komputer dimana 
+                komputer-komputer 
+                tersebut 
+                menggunakan sistem komunikasi. 
+                c. 
+                dapat 
+                saling 
+                berhubungan 
+                Sekelompok komputer dan perangkat terkait yang dihubungkan 
+                dengan fasilitas komunikasi. 
+                Dari ketiga definisi tersebut yang paling mendekati makna jaringan 
+                komputer saat ini adalah poin C, karena pada saat ini seiring perkembangan 
+                teknologi, yang terhubung dalam jaringan tidak hanya komputer saja namun 
+                ada perangkat lain seperti Handphone, Printer, Scanner dan lain-lain. dengan 
+                adanya teknologi Internet of Things semua benda dimungkinkan akan 
+                terhubung dengan sebuah jaringan bahkan manusia akan terhubung dengan 
+                jaringan.</p>
+            <button onclick="toggleDescription()">Tampilkan/Sembunyikan Deskripsi</button>
+        </div>
+    </div>
+    <script>
+        function toggleDescription() {
+            const descriptionText = document.getElementById('description-text');
+            if (descriptionText.style.display === 'none') {
+                descriptionText.style.display = 'block';
+            } else {
+                descriptionText.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
